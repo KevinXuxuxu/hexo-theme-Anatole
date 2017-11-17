@@ -11,4 +11,9 @@ block content
   .autopagerize_page_element: .content
     .archive.animated.fadeInDown
       ul.list-with-title
-        i.fa.fa-tag
+        .listing-title= __("Categories")
+        include mixins
+        +categoryList()
+        .listing-title= __("Tags")
+        include mixins
+        +tagList()

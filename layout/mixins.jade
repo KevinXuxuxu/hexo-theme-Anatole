@@ -75,3 +75,16 @@ mixin postList(hide)
 					div.post-time
 						span.date= date(item.date, 'MM-DD')
 		- })
+
+mixin categoryList()
+	for cat in page.cats.sort('posts').data
+		i.fa.fa-tag
+		a.tag(href=config.root + "categories/" + cat.name, title= cat.name)= cat.name + "      "
+
+mixin tagList()
+	for tag in page.tags.sort('posts').data
+		if tag.name == "hidden"
+			- continue
+		i.fa.fa-tag
+		a.tag(href=config.root + "tags/" + tag.name, title= tag.name)= tag.name + "      "
+
