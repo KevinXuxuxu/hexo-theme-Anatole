@@ -1,8 +1,8 @@
 TODO:
 - __add steam accout link in social network links.__
-- __add categories page for tags.__
 - __add something like _status_ and make it linkable to posts.__
 - __add about page.__
+- add categories page for tags.
 - hide posts with certain tags.
 - add filter for posts displayed on index.
 
